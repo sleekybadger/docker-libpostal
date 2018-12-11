@@ -1,7 +1,11 @@
 .git
+.dobi
+
 .gitignore
+.dockeringore
+.travis.yml
+.hadolint.yaml
+
 LICENSE
 README.md
-.hadolint.yaml
 dobi.yaml
-.dobi
