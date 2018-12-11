@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+docker build -t ${DOCKER_REPO}:alpine \
+             -t ${DOCKER_REPO}:alpine3.8 \
+             -t ${DOCKER_REPO}:1-alpine \
+             -t ${DOCKER_REPO}:1-alpine3.8 \
+             -t ${DOCKER_REPO}:1.1-alpine \
+             -t ${DOCKER_REPO}:1.1-alpine3.8 \
+             -t ${DOCKER_REPO}:1.1-alpha-alpine \
+             -t ${DOCKER_REPO}:1.1-alpha-alpine3.8 \
+             -t ${DOCKER_REPO}:latest .

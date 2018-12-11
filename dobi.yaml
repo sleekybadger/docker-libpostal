@@ -1,0 +1,42 @@
+meta:
+  project: sleekybadger/libpostal
+  default: tag
+
+image=1.0.0:
+  context: .
+  dockerfile: 1.0.0/alpine/Dockerfile
+  image: '{project}'
+  tags:
+    - 1.0-alpine
+    - 1.0-alpine3.8
+    - 1.0.0-alpine
+    - 1.0.0-alpha-alpine3.8
+
+image=1.1-alpha:
+  context: .
+  dockerfile: 1.1-alpha/alpine/Dockerfile
+  image: '{project}'
+  tags:
+    - alpine
+    - alpine3.8
+    - 1-alpine
+    - 1-alpine3.8
+    - 1.1-alpine
+    - 1.1-alpine3.8
+    - 1.1-alpha-alpine
+    - 1.1-alpha-alpine3.8
+    - latest
+
+alias=tag:
+  tasks:
+    - 1.0.0:tag
+    - 1.1-alpha:tag
+  annotations:
+    description: Build and tag images
+
+alias=clean:
+  tasks:
+    - 1.0.0:rm
+    - 1.1-alpha:rm
+  annotations:
+      description: "Remove all images"
