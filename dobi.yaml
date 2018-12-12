@@ -8,23 +8,15 @@ image=1.0.0:
   image: '{project}'
   tags:
     - 1.0-alpine
-    - 1.0-alpine3.8
     - 1.0.0-alpine
-    - 1.0.0-alpha-alpine3.8
 
 image=1.1-alpha:
   context: .
   dockerfile: 1.1-alpha/alpine/Dockerfile
   image: '{project}'
   tags:
-    - alpine
-    - alpine3.8
-    - 1-alpine
-    - 1-alpine3.8
     - 1.1-alpine
-    - 1.1-alpine3.8
     - 1.1-alpha-alpine
-    - 1.1-alpha-alpine3.8
     - latest
 
 alias=tag:

@@ -1,5 +1,10 @@
 # docker-libpostal
 
+[![CI Build Status](https://travis-ci.org/danger/danger-js.svg?branch=master)](https://travis-ci.org/danger/danger-js)
+[![Docker Build Status](https://img.shields.io/docker/build/sleekybadger/libpostal.svg)](https://hub.docker.com/r/sleekybadger/libpostal/)
+[![Docker Automated](https://img.shields.io/docker/automated/sleekybadger/libpostal.svg)](https://hub.docker.com/r/sleekybadger/libpostal/)
+
+
 Base [libpostal](https://github.com/openvenues/libpostal) Docker images built on Alpine Linux.
 
 Versions v1.0.0 and v1.1-alpha – built on [Alpine Linux](https://alpinelinux.org).
@@ -7,9 +12,8 @@ Versions v1.0.0 and v1.1-alpha – built on [Alpine Linux](https://alpinelinux.o
 All versions use [sleekybadger/libpostal](https://hub.docker.com/r/sleekybadger/libpostal) repository,
 but each version aligns with the following tags:
 
-* `latest` `alpine` `alpine3.8`
-* `1-alpine` `1-alpine3.8` `1.1-alpine`
-* `1.1-alpine3.8` `1.1-alpha-alpine` `1.1-alpha-alpine3.8`
+* `latest` `1.1-alpine` `1.1-alpha-alpine`
+* `1.0-alpine` `1.0.0-alpine`
 
 ## Table of Contents
 
